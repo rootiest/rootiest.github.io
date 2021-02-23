@@ -1,0 +1,15 @@
+{
+    "name": "Rootiest",
+    "short_name": "Rootiest",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0d304b",
+    "background_color": "#0d304b",
+    "start_url": "https://rootiest.com",
+    "display": "standalone"
+}
