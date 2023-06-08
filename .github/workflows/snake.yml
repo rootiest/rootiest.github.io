@@ -34,17 +34,17 @@ jobs:
           #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
           #                 Exactly 5 colors are expected.
           outputs: |
-            resources/github-snake.svg
-            resources/github-snake-dark.svg?palette=github-dark
-            resources/snake.gif?color_snake=purple&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
-            resources/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-            resources/git-snake.gif
-            resources/git-snake-dark.gif?palette=github-dark
+            img/github-snake.svg
+            img/github-snake-dark.svg?palette=github-dark
+            img/snake.gif?color_snake=purple&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            img/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            img/git-snake.gif
+            img/git-snake-dark.gif?palette=github-dark
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add ./resources
+          git add ./img
           git commit -a -m "Add snek"
       - name: Push changes
         uses: ad-m/github-push-action@master
