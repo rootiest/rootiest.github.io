@@ -37,6 +37,7 @@ jobs:
             img/github-snake.svg
             img/github-snake-dark.svg?palette=github-dark
             img/snake.gif?color_snake=purple&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            img/snake-dark.gif?color_snake=purple&color_dots=#161b22,#01311f,#006d32,#26a641,#40c463
             img/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
             img/git-snake.gif
             img/git-snake-dark.gif?palette=github-dark
@@ -45,7 +46,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add ./img
-          git commit -a -m "Add snek"
+          git commit -a -m "Update snek"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
