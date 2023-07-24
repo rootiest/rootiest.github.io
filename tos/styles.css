@@ -1,6 +1,6 @@
 body {
   color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
+  font-family: "FiraCode", sans-serif;
   font-size: 150%;
   text-align: center;
   margin: auto;
@@ -10,7 +10,7 @@ body {
 
 h1 {
   color: rgba(255, 255, 255);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "FiraCode", sans-serif;
   font-size: 300%;
   text-align: center;
   margin: auto;
@@ -18,7 +18,7 @@ h1 {
 }
 h2 {
   color: rgb(251, 7, 81);
-  font-family: "Montserrat", sans-serif;
+  font-family: "FiraCode", sans-serif;
   font-size: 175%;
   text-align: center;
   margin: auto;
