@@ -5,7 +5,7 @@ body {
   text-align: center;
   margin: auto;
   width: 100%;
-  background: linear-gradient(0deg, #0d304b, #000000);
+  background: #0d304b;
 }
 
 h1 {
@@ -20,14 +20,6 @@ h2 {
   color: rgb(251, 7, 81);
   font-family: "Montserrat", sans-serif;
   font-size: 175%;
-  text-align: center;
-  margin: auto;
-  width: 100%;
-}
-footer {
-  color: rgb(179, 186, 196);
-  font-family: "Fira Code", monospace;
-  font-size: 75%;
   text-align: center;
   margin: auto;
   width: 100%;
