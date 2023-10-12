@@ -2,7 +2,7 @@ body {
   color: rgb(125, 125, 125);
   font-family: "Roboto", sans-serif;
   font-size: 150%;
-  text-align: left;
+  text-align: center;
   margin: auto;
   width: 100%;
   background: linear-gradient(0deg, #0d304b, #000000);
@@ -20,7 +20,7 @@ h2 {
   color: rgb(251, 7, 81);
   font-family: "Montserrat", sans-serif;
   font-size: 175%;
-  text-align: left;
+  text-align: center;
   margin: auto;
   width: 100%;
 }
