@@ -70,26 +70,27 @@
 
 <body>
   <h1>
-    Rootiest Solutions Services <br />
+    Configuring Firefox Sync <br />
     <img src="img/logo.png" alt="Rootiest Logo" height="148" width="148" />
   </h1>
   <br />
-  <h2>Rootiest Dev Services:</h2>
-  <h4><a href="https://search.rootiest.dev">Rootiest Search Provider</a></h4>
-  <h4><a href="https://paste.rootiest.dev">Rootiest Pastebinning Service</a></h4>
-  <h4><a href="https://squoosh.rootiest.dev">Rootiest Image Conversion</a></h4>
-  <h4><a href="https://paperless.rootiest.dev">Rootiest Document Storage</a></h4>
-  <h4><a href="https://photos.rootiest.dev">Rootiest Photo Library</a></h4>
-  <h4><a href="https://books.rootiest.dev">Rootiest Book Library</a></h4>
-  <h4><a href="https://cryptpad.rootiest.dev">Rootiest Secure Office</a></h4>
-  <h4><a href="https://cloud.rootiest.dev">Rootiest Cloud Storage</a> (Unavailable) </h4>
-  <h4><a href="https://vault.rootiest.dev">Rootiest Password Vault</a></h4>
-  <h4><a href="https://search.rootiest.dev">Rootiest Search Provider</a></h4>
-  <h4><a href="https://lounge.rootiest.dev">Rootiest IRC Lounge</a></h4>
-  <h4><a href="https://speed.rootiest.dev">Rootiest Speed Test</a></h4>
-  <h4><a href="https://budget.rootiest.dev">Rootiest Budget Tracking</a></h4>
-  <h4><a href="https://timesheet.rootiest.dev">Rootiest Time Tracking</a></h4>
-  <h4><a href="fxsync.html">Rootiest Firefox Sync</a></h4>
+  <h2>Firefox:</h2>
+  <p>
+    Log out of the official Firefox Sync service.
+
+    Go to <a href="about:config">about:config</a>
+    
+    Search for <code>identity.sync.tokenserver.uri</code>
+
+    Change the value to <code>https://fxsync.rootiest.dev/token/1.0/sync/1.5</code>
+
+    Restart Firefox and log in to your Firefox Sync as normal.
+
+    Login is provided by Mozilla but sync services will be carried out by Rootiest Solutions.
+
+    Enjoy!
+
+  </p>
   <br>
   <br>
   <br>
