@@ -1,7 +1,7 @@
 body {
-  color: rgb(125, 125, 125);
+  color: rgba(255, 255, 255);
   font-family: "Roboto", sans-serif;
-  font-size: 150%;
+  font-size: 125%;
   text-align: center;
   margin: auto;
   width: 100%;
@@ -23,6 +23,15 @@ h2 {
   text-align: center;
   margin: auto;
   width: 100%;
+}
+h4 {
+  color: rgb(125, 125, 125);
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background: linear-gradient(0deg, #0d304b, #000000);
 }
 footer {
   color: rgb(179, 186, 196);
