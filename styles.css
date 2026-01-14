@@ -17,14 +17,14 @@
 
 :root {
   --primary: #fb0751;
-  --primary-glow: rgba(251, 7, 81, 0.4);
+  --primary-glow: rgb(251 7 81 / 40%);
   --bg-dark: #0a0a0f;
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-card-hover: rgba(255, 255, 255, 0.06);
-  --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --text-muted: rgba(255, 255, 255, 0.5);
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --bg-card: rgb(255 255 255 / 3%);
+  --bg-card-hover: rgb(255 255 255 / 6%);
+  --text-primary: #fff;
+  --text-secondary: rgb(255 255 255 / 70%);
+  --text-muted: rgb(255 255 255 / 50%);
+  --border-subtle: rgb(255 255 255 / 8%);
   --gradient-start: #0d304b;
   --gradient-end: #0a0a0f;
 }
@@ -41,7 +41,7 @@ html {
 
 body {
   color: var(--text-primary);
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
@@ -64,6 +64,7 @@ body {
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  animation: fade-in-up 0.6s ease-out;
 }
 
 .logo {
@@ -71,13 +72,13 @@ body {
   height: 120px;
   margin-bottom: 24px;
   border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 30%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo:hover {
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 30px 80px rgb(0 0 0 / 40%);
 }
 
 h1 {
@@ -100,7 +101,7 @@ h1 {
 /* Section Titles */
 h2 {
   color: var(--primary);
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -119,6 +120,7 @@ h2 {
   gap: 16px;
   max-width: 900px;
   margin: 0 auto;
+  animation: fade-in-up 0.6s ease-out 0.2s both;
 }
 
 .project-card {
@@ -138,7 +140,7 @@ h2 {
   background: var(--bg-card-hover);
   border-color: var(--primary);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(251, 7, 81, 0.15);
+  box-shadow: 0 8px 32px rgb(251 7 81 / 15%);
 }
 
 .project-icon {
@@ -172,7 +174,7 @@ h2 {
 }
 
 .snake-container {
-  max-width: 500px;
+  max-width: 50%;
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
@@ -180,10 +182,11 @@ h2 {
   border: 1px solid var(--border-subtle);
   transition: border-color 0.3s ease;
   display: inline-block;
+  animation: fade-in-up 0.6s ease-out 0.4s both;
 }
 
 .snake-container:hover {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgb(255 255 255 / 15%);
 }
 
 .snake-container img {
@@ -240,7 +243,7 @@ h2 {
 }
 
 /* Responsive */
-@media (max-width: 640px) {
+@media (width < 640px) {
   .hero {
     padding: 60px 16px 40px;
   }
@@ -259,25 +262,14 @@ h2 {
 }
 
 /* Animations */
-@keyframes fadeInUp {
+@keyframes fade-in-up {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.hero-content {
-  animation: fadeInUp 0.6s ease-out;
-}
-
-.projects-grid {
-  animation: fadeInUp 0.6s ease-out 0.2s both;
-}
-
-.snake-container {
-  animation: fadeInUp 0.6s ease-out 0.4s both;
 }
