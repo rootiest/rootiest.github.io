@@ -15,37 +15,268 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+:root {
+  --primary: #fb0751;
+  --primary-glow: rgba(251, 7, 81, 0.4);
+  --bg-dark: #0a0a0f;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --gradient-start: #0d304b;
+  --gradient-end: #0a0a0f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
-  font-size: 150%;
+  color: var(--text-primary);
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 24px 60px;
   text-align: center;
-  margin: auto;
-  width: 100%;
-  background: linear-gradient(0deg, #0d304b, #000000);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
-  color: rgba(255, 255, 255);
+  color: var(--text-primary);
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 300%;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  line-height: 1.1;
 }
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  max-width: 500px;
+  margin: 0 auto 32px;
+}
+
+/* Section Titles */
 h2 {
-  color: rgb(251, 7, 81);
+  color: var(--primary);
   font-family: "Montserrat", sans-serif;
-  font-size: 175%;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 32px;
 }
-footer {
-  color: rgb(179, 186, 196);
-  font-family: "Fira Code", monospace;
-  font-size: 75%;
+
+/* Projects Grid */
+.projects-section {
+  padding: 40px 24px 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(251, 7, 81, 0.15);
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary), #ff6b8a);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.project-info h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-info p {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Snake Animation */
+.snake-section {
+  padding: 40px 24px;
   text-align: center;
-  margin: auto;
+}
+
+.snake-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: border-color 0.3s ease;
+}
+
+.snake-container:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.snake-container img {
   width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.site-footer {
+  padding: 40px 24px 100px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.social-links a {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.social-links img {
+  height: 28px;
+  border-radius: 4px;
+}
+
+.footer-meta {
+  color: var(--text-muted);
+  font-family: "Fira Code", monospace;
+  font-size: 0.75rem;
+}
+
+/* Badges Row */
+.badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.badges-row img {
+  height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero {
+    padding: 60px 16px 40px;
+  }
+  
+  .projects-section {
+    padding: 32px 16px 48px;
+  }
+  
+  .project-card {
+    padding: 20px;
+  }
+  
+  .social-links {
+    gap: 8px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.projects-grid {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.snake-container {
+  animation: fadeInUp 0.6s ease-out 0.4s both;
 }
