@@ -88,149 +88,80 @@ h1 {
   margin: 0 auto;
 }
 
-h2 {
+/* Content Section */
+.content-section {
+  padding: 40px 24px 80px;
+}
+
+.legal-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 48px;
+  animation: fade-in-up 0.6s ease-out 0.1s both;
+}
+
+.legal-content .intro {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.legal-content h2 {
   color: var(--primary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-/* Discord Section */
-.contact-section {
-  padding: 40px 24px;
-}
-
-.discord-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  padding: 32px;
-  text-align: center;
-  animation: fade-in-up 0.6s ease-out 0.1s both;
-}
-
-.discord-banner {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  margin-top: 40px;
   margin-bottom: 16px;
-  transition: transform 0.3s ease;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.discord-banner:hover {
-  transform: scale(1.02);
+.legal-content h2:first-of-type {
+  margin-top: 0;
 }
 
-.discord-link {
-  display: inline-block;
-  color: var(--primary);
+.legal-content h3 {
+  color: var(--text-primary);
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
+  margin-top: 24px;
+  margin-bottom: 12px;
 }
 
-.discord-link:hover {
-  opacity: 0.8;
-}
-
-/* Contact Methods Section */
-.methods-section {
-  padding: 40px 24px;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-}
-
-.contact-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 20px 24px;
-  text-decoration: none;
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
-  animation: fade-in-up 0.6s ease-out 0.2s both;
-}
-
-.contact-card:hover {
-  background: var(--bg-card-hover);
-  border-color: rgb(255 255 255 / 12%);
-  transform: translateY(-2px);
-}
-
-.contact-icon {
-  font-size: 2rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.contact-info h3 {
-  color: var(--text-primary);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.contact-info p {
+.legal-content p {
   color: var(--text-secondary);
-  font-size: 0.875rem;
-  margin: 0;
+  margin-bottom: 16px;
+  line-height: 1.8;
 }
 
-/* Verify Section */
-.verify-section {
-  padding: 40px 24px 80px;
+.legal-content ul {
+  margin: 16px 0 24px 24px;
+  list-style-type: disc;
 }
 
-.verify-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  padding: 32px;
-  animation: fade-in-up 0.6s ease-out 0.3s both;
+.legal-content li {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.7;
 }
 
-.verify-icon {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.verify-info h3 {
+.legal-content strong {
   color: var(--text-primary);
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 8px;
 }
 
-.gpg-fingerprint {
+.legal-content a {
   color: var(--primary);
-  font-family: "Fira Code", monospace;
-  font-size: 0.875rem;
   text-decoration: none;
-  word-break: break-all;
   transition: opacity 0.2s ease;
 }
 
-.gpg-fingerprint:hover {
+.legal-content a:hover {
   opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -261,12 +192,11 @@ h2 {
 
 /* Responsive */
 @media (width < 640px) {
-  .verify-card {
-    flex-direction: column;
-    text-align: center;
+  .legal-content {
+    padding: 24px;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .legal-content h2 {
+    font-size: 1.25rem;
   }
 }
