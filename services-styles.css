@@ -15,45 +15,224 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+:root {
+  --primary: #fb0751;
+  --primary-glow: rgb(251 7 81 / 40%);
+  --bg-dark: #0a0a0f;
+  --bg-card: rgb(255 255 255 / 3%);
+  --bg-card-hover: rgb(255 255 255 / 6%);
+  --text-primary: #fff;
+  --text-secondary: rgb(255 255 255 / 70%);
+  --text-muted: rgb(255 255 255 / 50%);
+  --border-subtle: rgb(255 255 255 / 8%);
+  --gradient-start: #0d304b;
+  --gradient-end: #0a0a0f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: rgba(255, 255, 255);
-  font-family: "Roboto", sans-serif;
-  font-size: 125%;
+  color: var(--text-primary);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 24px 40px;
   text-align: center;
-  margin: auto;
-  width: 100%;
-  background: linear-gradient(0deg, #0d304b, #000000);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fade-in-up 0.6s ease-out;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 30%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 30px 80px rgb(0 0 0 / 40%);
 }
 
 h1 {
-  color: rgba(255, 255, 255);
+  color: var(--text-primary);
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 300%;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  line-height: 1.1;
 }
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
 h2 {
-  color: rgb(251, 7, 81);
-  font-family: "Montserrat", sans-serif;
-  font-size: 175%;
+  color: var(--primary);
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 32px;
   text-align: center;
-  margin: auto;
-  width: 100%;
 }
-h4 {
-  color: rgb(125, 125, 125);
-  font-family: "Roboto", sans-serif;
-  font-size: 150%;
+
+/* Services Grid */
+.services-section {
+  padding: 40px 24px 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  animation: fade-in-up 0.6s ease-out 0.2s both;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.service-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgb(251 7 81 / 15%);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary), #ff6b8a);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.service-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.service-info h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.service-info p {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+/* Footer */
+.site-footer {
+  padding: 40px 24px 60px;
   text-align: center;
-  margin: auto;
-  width: 100%;
 }
-footer {
-  color: rgb(179, 186, 196);
+
+.footer-meta {
+  color: var(--text-muted);
   font-family: "Fira Code", monospace;
-  font-size: 75%;
-  text-align: center;
-  margin: auto;
-  width: 100%;
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (width < 640px) {
+  .hero {
+    padding: 48px 16px 32px;
+  }
+
+  .services-section {
+    padding: 32px 16px 48px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
