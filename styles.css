@@ -172,13 +172,14 @@ h2 {
 }
 
 .snake-container {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   transition: border-color 0.3s ease;
+  display: inline-block;
 }
 
 .snake-container:hover {
