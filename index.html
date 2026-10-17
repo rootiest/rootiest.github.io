@@ -40,21 +40,13 @@
 
   <!-- HTML Meta Tags -->
   <title>Rootiest Solutions</title>
-  <meta name="description" content="Welcome to Rootiest Solutions!
-
-  Become a part of a growing community eager to help users of all skill levels learn grow together!
-
-Learn and collaborate on 3D printing, software/hardware development, and more!">
+  <meta name="description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers.">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://rootiest.com">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rootiest Solutions">
-  <meta property="og:description" content="Welcome to Rootiest Solutions!
-
-  Become a part of a growing community eager to help users of all skill levels learn grow together!
-
-Learn and collaborate on 3D printing, software/hardware development, and more!">
+  <meta property="og:description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers.">
   <meta property="og:image" content="https://www.rootiest.com/img/banner.png">
 
   <!-- Twitter Meta Tags -->
@@ -62,11 +54,7 @@ Learn and collaborate on 3D printing, software/hardware development, and more!">
   <meta property="twitter:domain" content="rootiest.com">
   <meta property="twitter:url" content="https://rootiest.com">
   <meta name="twitter:title" content="Rootiest Solutions">
-  <meta name="twitter:description" content="Welcome to Rootiest Solutions!
-
-  Become a part of a growing community eager to help users of all skill levels learn grow together!
-
-Learn and collaborate on 3D printing, software/hardware development, and more!">
+  <meta name="twitter:description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers.">
   <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png">
 
 </head>
@@ -86,48 +74,168 @@ Learn and collaborate on 3D printing, software/hardware development, and more!">
     <div class="hero-content">
       <img src="img/logo.png" alt="Rootiest Logo" class="logo" width="120" height="120" />
       <h1>Rootiest Solutions</h1>
-      <p class="tagline">Building tools and communities for makers, developers, and 3D printing enthusiasts.</p>
+      <p class="tagline">Self-hosted, privacy-respecting services and open-source tools for developers and makers.</p>
+      <div class="status-badge">
+        <a href="https://status.rootiest.dev/">
+          <img src="https://status.rootiest.dev/badge.svg?theme=mocha&style=for-the-badge" alt="Rootiest Services status" />
+        </a>
+      </div>
+      <div class="hero-links">
+        <a href="services.html">Hosted services</a>
+        <a href="https://status.rootiest.dev/">Status</a>
+        <a href="https://support.rootiest.dev/">Support</a>
+        <a href="https://git.rootiest.dev/rootiest">Gitea</a>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section class="projects-section">
     <div class="container">
-      <h2>Featured Projects</h2>
+      <h2>Projects</h2>
       <div class="projects-grid">
-        <a href="https://github.com/rootiest/zippy_guides" class="project-card">
-          <div class="project-icon">📚</div>
+        <a href="https://github.com/rootiest/fish-config" class="project-card">
+          <div class="project-icon">🐟</div>
           <div class="project-info">
-            <h3>Zippy Guides</h3>
-            <p>Comprehensive documentation and tutorials</p>
+            <h3>Fish Config</h3>
+            <p>A modular, guard-railed Fish shell configuration with full documentation.</p>
           </div>
         </a>
+        <a href="https://github.com/rootiest/neovim-config" class="project-card">
+          <div class="project-icon">📝</div>
+          <div class="project-info">
+            <h3>Neovim Config</h3>
+            <p>The Rootiest Neovim setup, tuned for everyday development.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/obsidian-ai-image-ocr" class="project-card">
+          <div class="project-icon">🔎</div>
+          <div class="project-info">
+            <h3>Obsidian AI Image OCR</h3>
+            <p>Obsidian plugin for AI-powered text extraction from images.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/rootiest-ai" class="project-card">
+          <div class="project-icon">🤖</div>
+          <div class="project-info">
+            <h3>Rootiest AI</h3>
+            <p>Agent plugins and skills for Claude Code and other AI coding agents.</p>
+          </div>
+        </a>
+        <a href="https://git.rootiest.dev/rootiest/claude-tokenization-proxy" class="project-card">
+          <div class="project-icon">🛡️</div>
+          <div class="project-info">
+            <h3>Claude Tokenization Proxy</h3>
+            <p>Masks secrets locally before they reach the Claude API, then restores them in replies.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/rootiest-iosevka" class="project-card">
+          <div class="project-icon">🔤</div>
+          <div class="project-info">
+            <h3>Rootiest Iosevka</h3>
+            <p>A custom Iosevka font variant built for terminals and editors.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/tmux-config" class="project-card">
+          <div class="project-icon">🪟</div>
+          <div class="project-info">
+            <h3>Tmux Config</h3>
+            <p>The Rootiest tmux configuration.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/kitty-config" class="project-card">
+          <div class="project-icon">🐱</div>
+          <div class="project-info">
+            <h3>Kitty Config</h3>
+            <p>The Rootiest kitty terminal configuration.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/nvim-updater.nvim" class="project-card">
+          <div class="project-icon">🔄</div>
+          <div class="project-info">
+            <h3>nvim-updater.nvim</h3>
+            <p>Build and update Neovim from source, from inside Neovim.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/neoterm" class="project-card">
+          <div class="project-icon">🖥️</div>
+          <div class="project-info">
+            <h3>NeoTerm</h3>
+            <p>Use Neovide as a traditional terminal emulator.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="projects-section">
+    <div class="container">
+      <h2>Hosted Services</h2>
+      <div class="projects-grid">
+        <a href="services.html" class="project-card">
+          <div class="project-icon">☁️</div>
+          <div class="project-info">
+            <h3>Rootiest Services</h3>
+            <p>Notes, photos, files, passwords, git hosting and more, behind one RootiestID sign-in.</p>
+          </div>
+        </a>
+        <a href="https://status.rootiest.dev/" class="project-card">
+          <div class="project-icon">📈</div>
+          <div class="project-info">
+            <h3>Service Status</h3>
+            <p>Live health of every Rootiest service and server.</p>
+          </div>
+        </a>
+        <a href="https://support.rootiest.dev/" class="project-card">
+          <div class="project-icon">🎫</div>
+          <div class="project-info">
+            <h3>Support Desk</h3>
+            <p>Open a ticket for help with any Rootiest service.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Klipper Section -->
+  <section class="projects-section">
+    <div class="container">
+      <h2>Klipper &amp; 3D Printing</h2>
+      <div class="projects-grid">
         <a href="https://github.com/rootiest/printcfg" class="project-card">
           <div class="project-icon">⚙️</div>
           <div class="project-info">
-            <h3>PrintCFG Suite</h3>
-            <p>Complete Klipper configuration system</p>
+            <h3>PrintCFG</h3>
+            <p>A suite of macros to enhance the Klipper experience.</p>
           </div>
         </a>
         <a href="https://github.com/rootiest/zippy-klipper_config" class="project-card">
           <div class="project-icon">🖨️</div>
           <div class="project-info">
-            <h3>Zippy Config</h3>
-            <p>Optimized Klipper configurations</p>
+            <h3>Zippy Klipper Config</h3>
+            <p>Klipper configurations, macros and tuning.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/zippy_guides" class="project-card">
+          <div class="project-icon">📚</div>
+          <div class="project-info">
+            <h3>Zippy Guides</h3>
+            <p>Guides for all things Klipper.</p>
+          </div>
+        </a>
+        <a href="https://github.com/rootiest/klipper-scripts" class="project-card">
+          <div class="project-icon">📜</div>
+          <div class="project-info">
+            <h3>Klipper Scripts</h3>
+            <p>Scripts that simplify userspace modification of Klipper.</p>
           </div>
         </a>
         <a href="https://github.com/rootiest/CANburner" class="project-card">
           <div class="project-icon">🔌</div>
           <div class="project-info">
-            <h3>CANBurner PCB</h3>
-            <p>CAN bus adapter for 3D printers</p>
-          </div>
-        </a>
-        <a href="services.html" class="project-card">
-          <div class="project-icon">💼</div>
-          <div class="project-info">
-            <h3>Dev Services</h3>
-            <p>Professional development consulting</p>
+            <h3>CANBurner</h3>
+            <p>A CAN bus adapter PCB for 3D printers.</p>
           </div>
         </a>
       </div>
