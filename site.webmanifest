@@ -8,8 +8,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#0d304b",
-    "background_color": "#0d304b",
+    "theme_color": "#1e1e2e",
+    "background_color": "#1e1e2e",
     "start_url": "https://rootiest.com",
     "display": "standalone"
 }

@@ -1,146 +1,175 @@
 <!DOCTYPE html>
+<!--
+ Copyright (C) 2026 Chris Laprade (chris@rootiest.com)
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@600&family=Roboto&family=Roboto+Mono&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Rootiest Solutions: Contact" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rootiest Solutions: Contact</title>
+  <meta name="description" content="Ways to get in touch with Rootiest Solutions" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Chris Laprade" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="icon" type="image/svg+xml" href="/img/icons/logo.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d304b" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff004c" />
   <meta name="apple-mobile-web-app-title" content="Rootiest" />
   <meta name="application-name" content="Rootiest" />
-  <meta name="msapplication-TileColor" content="#2b5797" />
-  <meta name="theme-color" content="#0d304b" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="msapplication-TileColor" content="#1e1e2e" />
+  <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)" />
 
-  <!-- HTML Meta Tags -->
-  <title>Rootiest Solutions: Contact</title>
-  <meta name="description" content="Outlines methods by which users can contact Rootiest Solutions">
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://rootiest.com/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rootiest Solutions: Contact" />
+  <meta property="og:description" content="Ways to get in touch with Rootiest Solutions" />
+  <meta property="og:image" content="https://www.rootiest.com/img/banner.png" />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://rootiest.com/contact">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Rootiest Solutions: Contact">
-  <meta property="og:description" content="Outlines methods by which users can contact Rootiest Solutions">
-  <meta property="og:image" content="https://www.rootiest.com/img/banner.png">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="rootiest.com">
-  <meta property="twitter:url" content="https://rootiest.com/contact">
-  <meta name="twitter:title" content="Rootiest Solutions: Contact">
-  <meta name="twitter:description" content="Outlines methods by which users can contact Rootiest Solutions">
-  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="rootiest.com" />
+  <meta property="twitter:url" content="https://rootiest.com/contact" />
+  <meta name="twitter:title" content="Rootiest Solutions: Contact" />
+  <meta name="twitter:description" content="Ways to get in touch with Rootiest Solutions" />
+  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png" />
 </head>
 
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <a href="/" class="back-link">← Back to Home</a>
-      <h1>📫 Contact Us</h1>
-      <p class="tagline">Get in touch with Rootiest Solutions</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="/" class="brand"><img src="/img/icons/logo.svg" alt="" width="28" height="28" />Rootiest</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="https://status.rootiest.dev/">Status</a>
+        <a href="https://support.rootiest.dev/">Support</a>
+        <a href="/contact/" aria-current="page">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Discord Section -->
-  <section class="contact-section">
-    <div class="container">
-      <div class="discord-card">
-        <a href="https://rootiest.com/discord.html">
-          <img src="https://rootiest.com/img/discord-banner.png" alt="Discord Banner" class="discord-banner" />
-        </a>
-        <a href="https://rootiest.com/discord.html" class="discord-link">Join the Rootiest Discord server</a>
+  <main class="wrap">
+    <section class="hero compact">
+      <img src="/img/icons/logo.svg" alt="" class="hero-logo" width="72" height="72" />
+      <h1>Contact</h1>
+      <p class="lede">Need help with a Rootiest service? The support desk is the fastest way. For anything else, pick a channel below.</p>
+      <div class="actions">
+        <a href="https://support.rootiest.dev/" class="btn primary">Open a ticket</a>
+        <a href="/discord.html" class="btn">Join the Discord</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Methods Section -->
-  <section class="methods-section">
-    <div class="container">
-      <h2>How to Reach Me</h2>
-      <div class="contact-grid">
-        <a href="https://support.rootiest.dev/" class="contact-card">
-          <div class="contact-icon">🎫</div>
-          <div class="contact-info">
+    <section class="section">
+      <div class="section-head">
+        <h2>How to reach me</h2>
+      </div>
+      <div class="grid hue-lavender">
+        <a href="https://support.rootiest.dev/" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#life-buoy"></use></svg></span>
+          <div class="card-body">
             <h3>Support Desk</h3>
             <p>support.rootiest.dev</p>
           </div>
         </a>
-        <a href="https://rootiest.com/discord.html" class="contact-card">
-          <div class="contact-icon">💬</div>
-          <div class="contact-info">
+        <a href="/discord.html" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#message-circle"></use></svg></span>
+          <div class="card-body">
             <h3>Discord</h3>
             <p>@Rootiest</p>
           </div>
         </a>
-        <a href="https://fosstodon.org/@rootiest" class="contact-card" target="_blank" rel="noopener noreferrer">
-          <div class="contact-icon">🐘</div>
-          <div class="contact-info">
-            <h3>Mastodon</h3>
-            <p>@rootiest@fosstodon.org</p>
-          </div>
-        </a>
-        <a href="https://lemmy.world/u/Rootiest" class="contact-card" target="_blank" rel="noopener noreferrer">
-          <div class="contact-icon">🔗</div>
-          <div class="contact-info">
-            <h3>Lemmy</h3>
-            <p>@Rootiest@lemmy.world</p>
-          </div>
-        </a>
-        <a href="https://bsky.app/profile/rootiest.com" class="contact-card" target="_blank" rel="noopener noreferrer">
-          <div class="contact-icon">🦋</div>
-          <div class="contact-info">
+        <a href="https://bsky.app/profile/rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#at-sign"></use></svg></span>
+          <div class="card-body">
             <h3>Bluesky</h3>
             <p>@rootiest.com</p>
           </div>
         </a>
-        <a href="https://matrix.to/#/@rootiest:matrix.org" class="contact-card" target="_blank" rel="noopener noreferrer">
-          <div class="contact-icon">🔐</div>
-          <div class="contact-info">
+        <a href="https://fosstodon.org/@rootiest" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#rss"></use></svg></span>
+          <div class="card-body">
+            <h3>Mastodon</h3>
+            <p>@rootiest@fosstodon.org</p>
+          </div>
+        </a>
+        <a href="https://lemmy.world/u/Rootiest" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#users"></use></svg></span>
+          <div class="card-body">
+            <h3>Lemmy</h3>
+            <p>@Rootiest@lemmy.world</p>
+          </div>
+        </a>
+        <a href="https://matrix.to/#/@rootiest:matrix.org" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#message-square-lock"></use></svg></span>
+          <div class="card-body">
             <h3>Matrix</h3>
             <p>@rootiest:matrix.org</p>
           </div>
         </a>
-        <a href="mailto:chris@rootiest.com" class="contact-card">
-          <div class="contact-icon">✉️</div>
-          <div class="contact-info">
+        <a href="mailto:chris@rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#mail"></use></svg></span>
+          <div class="card-body">
             <h3>Email</h3>
             <p>chris@rootiest.com</p>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Verify Section -->
-  <section class="verify-section">
-    <div class="container">
-      <h2>🔐 Verify My Identity</h2>
-      <div class="verify-card">
-        <div class="verify-icon">🔑</div>
-        <div class="verify-info">
-          <h3>GPG Public Key</h3>
-          <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/0FD25CCBCE46D16B8297DDA2623CE33E5CF323D5" target="_blank" rel="noopener noreferrer" class="gpg-fingerprint">
-            0FD25CCBCE46D16B8297DDA2623CE33E5CF323D5
-          </a>
-        </div>
+    <section class="section">
+      <div class="section-head">
+        <h2>Community</h2>
       </div>
-    </div>
-  </section>
+      <a href="/discord.html" class="discord-banner">
+        <img src="/img/discord-banner.png" alt="Rootiest Discord server banner" />
+      </a>
+    </section>
 
-  <!-- Footer -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Verify my identity</h2>
+      </div>
+      <div class="grid hue-green">
+        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/0FD25CCBCE46D16B8297DDA2623CE33E5CF323D5" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#key-round"></use></svg></span>
+          <div class="card-body">
+            <h3>GPG public key</h3>
+            <p class="fingerprint">0FD2 5CCB CE46 D16B 8297 DDA2 623C E33E 5CF3 23D5</p>
+            <span class="meta"><span>keys.openpgp.org</span><span>also at /keys/rootiest.asc</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
   <footer class="site-footer">
-    <p class="copyright">© 2026 Rootiest Solutions LLC. All rights reserved.</p>
+    <div class="wrap">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/tos/">Terms</a>
+        <a href="https://status.rootiest.dev/">Status</a>
+      </nav>
+      <p>© 2026 Rootiest Solutions</p>
+    </div>
   </footer>
 </body>
 </html>

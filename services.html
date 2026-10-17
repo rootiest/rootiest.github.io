@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <!--
  Copyright (C) 2026 Chris Laprade (chris@rootiest.com)
- 
+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU Affero General Public License as
  published by the Free Software Foundation, either version 3 of the
  License, or (at your option) any later version.
- 
+
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU Affero General Public License for more details.
- 
+
  You should have received a copy of the GNU Affero General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@600&family=Roboto&family=Roboto+Mono&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="services-styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rootiest Services</title>
   <meta name="description" content="Self-hosted, privacy-respecting services run by Rootiest Solutions" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Chris Laprade" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="icon" type="image/svg+xml" href="/img/icons/logo.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d304b" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff004c" />
   <meta name="apple-mobile-web-app-title" content="Rootiest" />
   <meta name="application-name" content="Rootiest" />
-  <meta name="msapplication-TileColor" content="#2b5797" />
-  <meta name="theme-color" content="#0d304b" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="msapplication-TileColor" content="#1e1e2e" />
+  <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)" />
 
-  <!-- HTML Meta Tags -->
-  <title>Rootiest Services</title>
-  <meta name="description" content="Self-hosted, privacy-respecting services run by Rootiest Solutions">
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://rootiest.com/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rootiest Services" />
+  <meta property="og:description" content="Self-hosted, privacy-respecting services run by Rootiest Solutions" />
+  <meta property="og:image" content="https://www.rootiest.com/img/banner.png" />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://rootiest.com/services.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Rootiest Services">
-  <meta property="og:description" content="Self-hosted, privacy-respecting services run by Rootiest Solutions">
-  <meta property="og:image" content="https://www.rootiest.com/img/banner.png">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="rootiest.com">
-  <meta property="twitter:url" content="https://rootiest.com/services.html">
-  <meta name="twitter:title" content="Rootiest Services">
-  <meta name="twitter:description" content="Self-hosted, privacy-respecting services run by Rootiest Solutions">
-  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="rootiest.com" />
+  <meta property="twitter:url" content="https://rootiest.com/services.html" />
+  <meta name="twitter:title" content="Rootiest Services" />
+  <meta name="twitter:description" content="Self-hosted, privacy-respecting services run by Rootiest Solutions" />
+  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png" />
 </head>
 
 <body>
@@ -67,214 +61,235 @@
     gtag('js', new Date());
     gtag('config', 'G-GMX96HJQ8Z');
   </script>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="/" class="brand"><img src="/img/icons/logo.svg" alt="" width="28" height="28" />Rootiest</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services.html" aria-current="page">Services</a>
+        <a href="https://status.rootiest.dev/">Status</a>
+        <a href="https://support.rootiest.dev/">Support</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="img/logo.png" alt="Rootiest Logo" class="logo" width="100" height="100" />
+  <main class="wrap">
+    <section class="hero compact">
+      <img src="/img/icons/logo.svg" alt="" class="hero-logo" width="72" height="72" />
       <h1>Rootiest Services</h1>
-      <p class="tagline">Self-hosted, privacy-respecting services. One RootiestID account signs you in to all of them.</p>
-      <p class="access-note">
+      <p class="lede">Self-hosted, privacy-respecting services. One RootiestID account signs you in to all of them.</p>
+      <p class="note">
         Most services are for members only. Having a RootiestID account doesn't unlock all of them:
         each service is enabled by membership in its RootiestID group. Services marked
-        <span class="tag-public">Public</span> are open to everyone.
-        To request access, <a href="https://support.rootiest.dev/new?category=account&service=auth&subject=%22Expand%20Access%22&body=%22%23%23%20**Request%20for%20expanded%20access**%20%20\n\nI%20would%20like%20to%20request%20access%20to%20%3Cinsert%20service%20name%3E.\nPlease%20review%20my%20RootiestID%20account%20for%20approval.%20%20\n\nThanks,\n%3Cinsert%20your%20name%3E%22">open a support ticket</a>.
+        <span class="pill">Public</span> are open to everyone.
+        To request access, <a href="https://support.rootiest.dev/">open a support ticket</a>.
       </p>
-      <a href="index.html" class="back-link">← Back to Home</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Sections -->
-  <section class="services-section">
-    <div class="container">
-      <h2>Start Here</h2>
-      <div class="services-grid">
-        <a href="https://auth.rootiest.dev" class="service-card">
-          <div class="service-icon">🪪</div>
-          <div class="service-info">
+    <section class="section">
+      <div class="section-head">
+        <h2>Start here</h2>
+      </div>
+      <div class="grid hue-red">
+        <a href="https://auth.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#fingerprint"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>RootiestID</h3>
             <p>Single sign-on for every Rootiest service, with passkey support.</p>
+            <span class="meta"><span>auth.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://status.rootiest.dev" class="service-card">
-          <div class="service-icon">📈</div>
-          <div class="service-info">
-            <h3>Status Page <span class="tag-public">Public</span></h3>
+        <a href="https://status.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#activity"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Status Page <span class="pill">Public</span></h3>
             <p>Live health of every service and server, with push alerts.</p>
+            <span class="meta"><span>status.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://support.rootiest.dev" class="service-card">
-          <div class="service-icon">🎫</div>
-          <div class="service-info">
+        <a href="https://support.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#life-buoy"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Support Desk</h3>
             <p>Open and track support tickets for any Rootiest service.</p>
+            <span class="meta"><span>support.rootiest.dev</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services-section">
-    <div class="container">
-      <h2>Notes &amp; Knowledge</h2>
-      <div class="services-grid">
-        <a href="https://notes.rootiest.com" class="service-card">
-          <div class="service-icon">🗒️</div>
-          <div class="service-info">
+    <section class="section">
+      <div class="section-head">
+        <h2>Notes &amp; knowledge</h2>
+      </div>
+      <div class="grid hue-yellow">
+        <a href="https://notes.rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#notebook-pen"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Notes</h3>
             <p>Quick notes and memos on a private Memos instance.</p>
+            <span class="meta"><span>notes.rootiest.com</span></span>
           </div>
         </a>
-
-        <a href="https://joplin.rootiest.com" class="service-card">
-          <div class="service-icon">📓</div>
-          <div class="service-info">
+        <a href="https://joplin.rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#notebook"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Joplin Sync</h3>
             <p>Sync server for the Joplin note-taking apps.</p>
+            <span class="meta"><span>joplin.rootiest.com</span></span>
           </div>
         </a>
-
-        <a href="https://livesync.rootiest.dev" class="service-card">
-          <div class="service-icon">💎</div>
-          <div class="service-info">
+        <a href="https://livesync.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#gem"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Obsidian LiveSync</h3>
             <p>Real-time Obsidian vault sync, replicated across two servers.</p>
+            <span class="meta"><span>livesync.rootiest.dev</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services-section">
-    <div class="container">
-      <h2>Files &amp; Media</h2>
-      <div class="services-grid">
-        <a href="https://photos.rootiest.com" class="service-card">
-          <div class="service-icon">📸</div>
-          <div class="service-info">
+    <section class="section">
+      <div class="section-head">
+        <h2>Files &amp; media</h2>
+      </div>
+      <div class="grid hue-blue">
+        <a href="https://photos.rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#image"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Photos</h3>
             <p>Private photo and video library with search and ML features, powered by Immich.</p>
+            <span class="meta"><span>photos.rootiest.com</span></span>
           </div>
         </a>
-
-        <a href="https://files.rootiest.com" class="service-card">
-          <div class="service-icon">📁</div>
-          <div class="service-info">
+        <a href="https://files.rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#folder-open"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Files</h3>
             <p>File storage and sharing over the web and SFTP, powered by SFTPGo.</p>
+            <span class="meta"><span>files.rootiest.com</span></span>
           </div>
         </a>
-
-        <a href="https://disk.rootiest.dev" class="service-card">
-          <div class="service-icon">💽</div>
-          <div class="service-info">
+        <a href="https://disk.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#hard-drive"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Disk</h3>
             <p>Fast file server with uploads, media playback and sharing, powered by copyparty.</p>
+            <span class="meta"><span>disk.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://pages.rootiest.fyi" class="service-card">
-          <div class="service-icon">📄</div>
-          <div class="service-info">
-            <h3>Pages <span class="tag-public">Public</span></h3>
+        <a href="https://pages.rootiest.fyi" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#globe"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Pages <span class="pill">Public</span></h3>
             <p>Static sites and published docs for Rootiest projects.</p>
+            <span class="meta"><span>pages.rootiest.fyi</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services-section">
-    <div class="container">
-      <h2>Developer Tools</h2>
-      <div class="services-grid">
-        <a href="https://git.rootiest.dev" class="service-card">
-          <div class="service-icon">🦫</div>
-          <div class="service-info">
+    <section class="section">
+      <div class="section-head">
+        <h2>Developer tools</h2>
+      </div>
+      <div class="grid hue-green">
+        <a href="https://git.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#git-branch"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Git</h3>
             <p>Gitea code hosting with CI runners, packages and SSH access.</p>
+            <span class="meta"><span>git.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://gists.rootiest.dev" class="service-card">
-          <div class="service-icon">📋</div>
-          <div class="service-info">
+        <a href="https://gists.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#code"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Gists</h3>
             <p>Share code snippets and pastes, powered by Opengist.</p>
+            <span class="meta"><span>gists.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://rootiest.link" class="service-card">
-          <div class="service-icon">🔗</div>
-          <div class="service-info">
+        <a href="https://rootiest.link" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#link"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Short Links</h3>
             <p>Privacy-respecting, ad-free URL shortener with stats.</p>
+            <span class="meta"><span>rootiest.link</span></span>
           </div>
         </a>
-
-        <a href="https://wakatime.rootiest.dev" class="service-card">
-          <div class="service-icon">⏱️</div>
-          <div class="service-info">
+        <a href="https://wakatime.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#timer"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Coding Stats</h3>
             <p>Track your coding time with WakaTime-compatible plugins, powered by Wakapi.</p>
+            <span class="meta"><span>wakatime.rootiest.dev</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services-section">
-    <div class="container">
-      <h2>Privacy &amp; Communication</h2>
-      <div class="services-grid">
-        <a href="https://vault.rootiest.dev" class="service-card">
-          <div class="service-icon">🔑</div>
-          <div class="service-info">
+    <section class="section">
+      <div class="section-head">
+        <h2>Privacy &amp; communication</h2>
+      </div>
+      <div class="grid hue-mauve">
+        <a href="https://vault.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#lock-keyhole"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Password Vault</h3>
             <p>Bitwarden-compatible password manager with autofill and TOTP.</p>
+            <span class="meta"><span>vault.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://chat.rootiest.com" class="service-card">
-          <div class="service-icon">🤖</div>
-          <div class="service-info">
+        <a href="https://chat.rootiest.com" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#bot"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>AI Chat</h3>
             <p>LibreChat workspace for many AI models, with file search.</p>
+            <span class="meta"><span>chat.rootiest.com</span></span>
           </div>
         </a>
-
-        <a href="https://ntfy.rootiest.dev" class="service-card">
-          <div class="service-icon">🔔</div>
-          <div class="service-info">
+        <a href="https://ntfy.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#bell"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Push Notifications</h3>
             <p>Send push notifications to your phone or desktop over HTTP, powered by ntfy.</p>
+            <span class="meta"><span>ntfy.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://molly.rootiest.dev" class="service-card">
-          <div class="service-icon">📨</div>
-          <div class="service-info">
+        <a href="https://molly.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#message-square-lock"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>MollySocket</h3>
             <p>UnifiedPush notifications for the Molly Signal client, without Google services.</p>
+            <span class="meta"><span>molly.rootiest.dev</span></span>
           </div>
         </a>
-
-        <a href="https://pds.rootiest.dev" class="service-card">
-          <div class="service-icon">🦋</div>
-          <div class="service-info">
+        <a href="https://pds.rootiest.dev" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#at-sign"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
             <h3>Bluesky PDS</h3>
             <p>A self-hosted Bluesky personal data server for AT Protocol accounts.</p>
+            <span class="meta"><span>pds.rootiest.dev</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <p class="footer-meta">© 2026 Rootiest Solutions</p>
+    <div class="wrap">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/tos/">Terms</a>
+        <a href="https://status.rootiest.dev/">Status</a>
+      </nav>
+      <p>© 2026 Rootiest Solutions</p>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <!--
  Copyright (C) 2026 Chris Laprade (chris@rootiest.com)
- 
+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU Affero General Public License as
  published by the Free Software Foundation, either version 3 of the
  License, or (at your option) any later version.
- 
+
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU Affero General Public License for more details.
- 
+
  You should have received a copy of the GNU Affero General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@600&family=Roboto&family=Roboto+Mono&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Rootiest Solutions homepage" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rootiest Solutions</title>
+  <meta name="description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Chris Laprade" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="icon" type="image/svg+xml" href="/img/icons/logo.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d304b" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff004c" />
   <meta name="apple-mobile-web-app-title" content="Rootiest" />
   <meta name="application-name" content="Rootiest" />
-  <meta name="msapplication-TileColor" content="#2b5797" />
-  <meta name="theme-color" content="#0d304b" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="msapplication-TileColor" content="#1e1e2e" />
+  <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)" />
 
-  <!-- HTML Meta Tags -->
-  <title>Rootiest Solutions</title>
-  <meta name="description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers.">
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://rootiest.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rootiest Solutions" />
+  <meta property="og:description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers." />
+  <meta property="og:image" content="https://www.rootiest.com/img/banner.png" />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://rootiest.com">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Rootiest Solutions">
-  <meta property="og:description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers.">
-  <meta property="og:image" content="https://www.rootiest.com/img/banner.png">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="rootiest.com">
-  <meta property="twitter:url" content="https://rootiest.com">
-  <meta name="twitter:title" content="Rootiest Solutions">
-  <meta name="twitter:description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers.">
-  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png">
-
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="rootiest.com" />
+  <meta property="twitter:url" content="https://rootiest.com" />
+  <meta name="twitter:title" content="Rootiest Solutions" />
+  <meta name="twitter:description" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools, configs and plugins for developers and makers." />
+  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png" />
 </head>
 
 <body>
@@ -68,255 +61,279 @@
     gtag('js', new Date());
     gtag('config', 'G-GMX96HJQ8Z');
   </script>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="img/logo.png" alt="Rootiest Logo" class="logo" width="120" height="120" />
-      <h1>Rootiest Solutions</h1>
-      <p class="tagline">Self-hosted, privacy-respecting services and open-source tools for developers and makers.</p>
-      <div class="status-badge">
-        <a href="https://status.rootiest.dev/">
-          <img src="https://status.rootiest.dev/badge.svg?theme=mocha&style=for-the-badge" alt="Rootiest Services status" />
-        </a>
-      </div>
-      <div class="hero-links">
-        <a href="services.html">Hosted services</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="/" class="brand"><img src="/img/icons/logo.svg" alt="" width="28" height="28" />Rootiest</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/services.html">Services</a>
         <a href="https://status.rootiest.dev/">Status</a>
         <a href="https://support.rootiest.dev/">Support</a>
-        <a href="https://git.rootiest.dev/rootiest">Gitea</a>
-      </div>
+        <a href="/contact/">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Projects Section -->
-  <section class="projects-section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <a href="https://github.com/rootiest/fish-config" class="project-card">
-          <div class="project-icon">🐟</div>
-          <div class="project-info">
+  <main class="wrap">
+    <section class="hero">
+      <img src="/img/icons/logo.svg" alt="Rootiest logo" class="hero-logo" width="112" height="112" />
+      <h1>Rootiest <span class="accent">Solutions</span></h1>
+      <p class="lede">Self-hosted, privacy-respecting services and open-source tools for developers and makers.</p>
+      <a href="https://status.rootiest.dev/" class="status-badge">
+        <img src="https://status.rootiest.dev/badge.svg?theme=mocha&amp;style=for-the-badge" alt="Rootiest Services status" />
+      </a>
+      <div class="actions">
+        <a href="/services.html" class="btn primary">Explore services</a>
+        <a href="https://github.com/rootiest" class="btn">GitHub</a>
+        <a href="https://git.rootiest.dev/rootiest" class="btn">Gitea</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Hosted services</h2>
+        <a href="/services.html">All services →</a>
+      </div>
+      <div class="grid hue-red">
+        <a href="https://photos.rootiest.com" class="card hue-blue">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#image"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Photos</h3>
+            <p>Private photo and video library with search and ML features, powered by Immich.</p>
+            <span class="meta"><span>photos.rootiest.com</span></span>
+          </div>
+        </a>
+        <a href="https://notes.rootiest.com" class="card hue-yellow">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#notebook-pen"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Notes</h3>
+            <p>Quick notes and memos on a private Memos instance.</p>
+            <span class="meta"><span>notes.rootiest.com</span></span>
+          </div>
+        </a>
+        <a href="https://vault.rootiest.dev" class="card hue-mauve">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#lock-keyhole"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Password Vault</h3>
+            <p>Bitwarden-compatible password manager with autofill and TOTP.</p>
+            <span class="meta"><span>vault.rootiest.dev</span></span>
+          </div>
+        </a>
+        <a href="https://git.rootiest.dev" class="card hue-green">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#git-branch"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Git</h3>
+            <p>Gitea code hosting with CI runners, packages and SSH access.</p>
+            <span class="meta"><span>git.rootiest.dev</span></span>
+          </div>
+        </a>
+        <a href="https://files.rootiest.com" class="card hue-blue">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#folder-open"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>Files</h3>
+            <p>File storage and sharing over the web and SFTP, powered by SFTPGo.</p>
+            <span class="meta"><span>files.rootiest.com</span></span>
+          </div>
+        </a>
+        <a href="https://chat.rootiest.com" class="card hue-mauve">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#bot"></use></svg><img class="badge" src="/img/icons/logo.svg" alt="" width="16" height="16" /></span>
+          <div class="card-body">
+            <h3>AI Chat</h3>
+            <p>LibreChat workspace for many AI models, with file search.</p>
+            <span class="meta"><span>chat.rootiest.com</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <a href="https://github.com/rootiest?tab=repositories">All repositories →</a>
+      </div>
+      <div class="grid hue-peach">
+        <a href="https://github.com/rootiest/fish-config" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#fish"></use></svg></span>
+          <div class="card-body">
             <h3>Fish Config</h3>
             <p>A modular, guard-railed Fish shell configuration with full documentation.</p>
+            <span class="meta"><span>Shell config</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/neovim-config" class="project-card">
-          <div class="project-icon">📝</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/neovim-config" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#square-terminal"></use></svg></span>
+          <div class="card-body">
             <h3>Neovim Config</h3>
             <p>The Rootiest Neovim setup, tuned for everyday development.</p>
+            <span class="meta"><span>Editor config</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/obsidian-ai-image-ocr" class="project-card">
-          <div class="project-icon">🔎</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/obsidian-ai-image-ocr" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#scan-text"></use></svg></span>
+          <div class="card-body">
             <h3>Obsidian AI Image OCR</h3>
             <p>Obsidian plugin for AI-powered text extraction from images.</p>
+            <span class="meta"><span>Obsidian plugin</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/rootiest-ai" class="project-card">
-          <div class="project-icon">🤖</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/rootiest-ai" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#sparkles"></use></svg></span>
+          <div class="card-body">
             <h3>Rootiest AI</h3>
             <p>Agent plugins and skills for Claude Code and other AI coding agents.</p>
+            <span class="meta"><span>Agent plugins</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://git.rootiest.dev/rootiest/claude-tokenization-proxy" class="project-card">
-          <div class="project-icon">🛡️</div>
-          <div class="project-info">
+        <a href="https://git.rootiest.dev/rootiest/claude-tokenization-proxy" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#shield-check"></use></svg></span>
+          <div class="card-body">
             <h3>Claude Tokenization Proxy</h3>
             <p>Masks secrets locally before they reach the Claude API, then restores them in replies.</p>
+            <span class="meta"><span>Tool</span><span>Gitea</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/rootiest-iosevka" class="project-card">
-          <div class="project-icon">🔤</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/rootiest-iosevka" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#type"></use></svg></span>
+          <div class="card-body">
             <h3>Rootiest Iosevka</h3>
             <p>A custom Iosevka font variant built for terminals and editors.</p>
+            <span class="meta"><span>Font</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/tmux-config" class="project-card">
-          <div class="project-icon">🪟</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/tmux-config" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#panels-top-left"></use></svg></span>
+          <div class="card-body">
             <h3>Tmux Config</h3>
             <p>The Rootiest tmux configuration.</p>
+            <span class="meta"><span>Terminal config</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/kitty-config" class="project-card">
-          <div class="project-icon">🐱</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/kitty-config" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#cat"></use></svg></span>
+          <div class="card-body">
             <h3>Kitty Config</h3>
             <p>The Rootiest kitty terminal configuration.</p>
+            <span class="meta"><span>Terminal config</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/nvim-updater.nvim" class="project-card">
-          <div class="project-icon">🔄</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/nvim-updater.nvim" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#refresh-cw"></use></svg></span>
+          <div class="card-body">
             <h3>nvim-updater.nvim</h3>
             <p>Build and update Neovim from source, from inside Neovim.</p>
+            <span class="meta"><span>Neovim plugin</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/neoterm" class="project-card">
-          <div class="project-icon">🖥️</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/neoterm" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#terminal"></use></svg></span>
+          <div class="card-body">
             <h3>NeoTerm</h3>
             <p>Use Neovide as a traditional terminal emulator.</p>
+            <span class="meta"><span>Tool</span><span>GitHub</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section class="projects-section">
-    <div class="container">
-      <h2>Hosted Services</h2>
-      <div class="projects-grid">
-        <a href="services.html" class="project-card">
-          <div class="project-icon">☁️</div>
-          <div class="project-info">
-            <h3>Rootiest Services</h3>
-            <p>Notes, photos, files, passwords, git hosting and more, behind one RootiestID sign-in.</p>
-          </div>
-        </a>
-        <a href="https://status.rootiest.dev/" class="project-card">
-          <div class="project-icon">📈</div>
-          <div class="project-info">
-            <h3>Service Status</h3>
-            <p>Live health of every Rootiest service and server.</p>
-          </div>
-        </a>
-        <a href="https://support.rootiest.dev/" class="project-card">
-          <div class="project-icon">🎫</div>
-          <div class="project-info">
-            <h3>Support Desk</h3>
-            <p>Open a ticket for help with any Rootiest service.</p>
-          </div>
-        </a>
+    <section class="section">
+      <div class="section-head">
+        <h2>Klipper &amp; 3D printing</h2>
       </div>
-    </div>
-  </section>
-
-  <!-- Klipper Section -->
-  <section class="projects-section">
-    <div class="container">
-      <h2>Klipper &amp; 3D Printing</h2>
-      <div class="projects-grid">
-        <a href="https://github.com/rootiest/printcfg" class="project-card">
-          <div class="project-icon">⚙️</div>
-          <div class="project-info">
+      <div class="grid hue-sky">
+        <a href="https://github.com/rootiest/printcfg" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#settings"></use></svg></span>
+          <div class="card-body">
             <h3>PrintCFG</h3>
             <p>A suite of macros to enhance the Klipper experience.</p>
+            <span class="meta"><span>Klipper macros</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/zippy-klipper_config" class="project-card">
-          <div class="project-icon">🖨️</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/zippy-klipper_config" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#printer"></use></svg></span>
+          <div class="card-body">
             <h3>Zippy Klipper Config</h3>
             <p>Klipper configurations, macros and tuning.</p>
+            <span class="meta"><span>Klipper config</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/zippy_guides" class="project-card">
-          <div class="project-icon">📚</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/zippy_guides" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#book-open"></use></svg></span>
+          <div class="card-body">
             <h3>Zippy Guides</h3>
             <p>Guides for all things Klipper.</p>
+            <span class="meta"><span>Docs</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/klipper-scripts" class="project-card">
-          <div class="project-icon">📜</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/klipper-scripts" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#scroll-text"></use></svg></span>
+          <div class="card-body">
             <h3>Klipper Scripts</h3>
             <p>Scripts that simplify userspace modification of Klipper.</p>
+            <span class="meta"><span>Scripts</span><span>GitHub</span></span>
           </div>
         </a>
-        <a href="https://github.com/rootiest/CANburner" class="project-card">
-          <div class="project-icon">🔌</div>
-          <div class="project-info">
+        <a href="https://github.com/rootiest/CANburner" class="card">
+          <span class="tile" aria-hidden="true"><svg class="glyph" width="24" height="24"><use href="/assets/icons.svg#cpu"></use></svg></span>
+          <div class="card-body">
             <h3>CANBurner</h3>
             <p>A CAN bus adapter PCB for 3D printers.</p>
+            <span class="meta"><span>Hardware</span><span>GitHub</span></span>
           </div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Snake Animation Section -->
-  <section class="snake-section">
-    <a href="https://github.com/rootiest" class="snake-container">
-      <img 
-        src="img/github-snake-dark.svg"
-        alt="Animated snake consuming GitHub contributions graph"
-        loading="lazy"
-      />
-    </a>
-  </section>
+    <section class="section">
+      <div class="section-head">
+        <h2>Activity</h2>
+      </div>
+      <a href="https://github.com/rootiest" class="snake">
+        <picture>
+          <source srcset="/img/github-snake-dark.svg" media="(prefers-color-scheme: dark)" />
+          <img src="/img/github-snake.svg" alt="Animated snake eating the GitHub contribution graph" loading="lazy" width="880" height="192" />
+        </picture>
+      </a>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="social-links">
-      <a href="discord.html">
-        <img
-          src="https://img.shields.io/discord/1058478355973939220?color=7289da&label=Discord&logo=discord&logoColor=white&style=for-the-badge"
-          alt="Discord server"
-        />
-      </a>
-      <a href="https://twitter.com/RootiestSolves">
-        <img
-          src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
-          alt="Twitter"
-        />
-      </a>
-      <a href="https://github.com/rootiest">
-        <img
-          src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
-          alt="GitHub"
-        />
-      </a>
-      <a href="https://git.rootiest.dev/rootiest">
-        <img
-          src="https://img.shields.io/badge/Gitea-609926?style=for-the-badge&logo=gitea&logoColor=white"
-          alt="Gitea"
-        />
-      </a>
-      <a href="https://www.paypal.me/rootiest/">
-        <img 
-          src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" 
-          alt="PayPal"
-        />
-      </a>
+    <div class="wrap">
+      <div class="badges">
+        <a href="/discord.html"><img src="https://img.shields.io/discord/1058478355973939220?color=7289da&amp;label=Discord&amp;logo=discord&amp;logoColor=white&amp;style=for-the-badge" alt="Discord server" /></a>
+        <a href="https://twitter.com/RootiestSolves"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" alt="Twitter" /></a>
+        <a href="https://github.com/rootiest"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a>
+        <a href="https://git.rootiest.dev/rootiest"><img src="https://img.shields.io/badge/Gitea-609926?style=for-the-badge&amp;logo=gitea&amp;logoColor=white" alt="Gitea" /></a>
+        <a href="https://www.paypal.me/rootiest/"><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&amp;logo=paypal&amp;logoColor=white" alt="PayPal" /></a>
+      </div>
+      <div class="badges small">
+        <a href="https://app.netlify.com/projects/charming-crumble-efcb4a/deploys"><img src="https://api.netlify.com/api/v1/badges/fa49e4b0-c380-431d-a4f0-ab714e504786/deploy-status" alt="Netlify Status" /></a>
+        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/0FD25CCBCE46D16B8297DDA2623CE33E5CF323D5"><img src="https://img.shields.io/badge/PGP-623CE33E5CF323D5-green?style=flat-square" alt="PGP Key" /></a>
+        <a href="bitcoin:3CmkzM7nPKWCeEc9y9KF5Gw2KQdbDLC77P"><img src="https://img.shields.io/keybase/btc/rootiest?style=flat-square" alt="Bitcoin" /></a>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/tos/">Terms</a>
+        <a href="https://status.rootiest.dev/">Status</a>
+      </nav>
+      <p>© 2026 Rootiest Solutions</p>
     </div>
-    
-    <div class="badges-row">
-      <a href="https://app.netlify.com/projects/charming-crumble-efcb4a/deploys">
-        <img src="https://api.netlify.com/api/v1/badges/fa49e4b0-c380-431d-a4f0-ab714e504786/deploy-status" alt="Netlify Status" />
-      </a>
-      <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/0FD25CCBCE46D16B8297DDA2623CE33E5CF323D5">
-        <img src="https://img.shields.io/badge/PGP-623CE33E5CF323D5-green?style=flat-square" alt="PGP Key" />
-      </a>
-      <a href="bitcoin:3CmkzM7nPKWCeEc9y9KF5Gw2KQdbDLC77P">
-        <img src="https://img.shields.io/keybase/btc/rootiest?style=flat-square" alt="Bitcoin" />
-      </a>
-    </div>
-    
-    <p class="footer-meta">© 2026 Rootiest Solutions</p>
-    
-    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-    <script>
-      kofiWidgetOverlay.draw('rootiest', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support me',
-        'floating-chat.donateButton.background-color': '#ff5f5f',
-        'floating-chat.donateButton.text-color': '#fff'
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      new Crate({
-        server: '1058478355973939220',
-        channel: '1115928968101634082'
-      })
-    </script>
   </footer>
+
+  <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+  <script>
+    kofiWidgetOverlay.draw('rootiest', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#ff004c',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '1058478355973939220',
+      channel: '1115928968101634082'
+    })
+  </script>
 </body>
 </html>
