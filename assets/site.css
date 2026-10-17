@@ -425,6 +425,109 @@ img {
   overflow-wrap: anywhere;
 }
 
+/* Legal pages */
+.legal {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 4vw, 2.5rem);
+  border: 1px solid var(--surface0);
+  border-radius: 0.75rem;
+  background: var(--mantle);
+  color: var(--subtext);
+  font-size: 0.975rem;
+  overflow-wrap: anywhere;
+}
+
+.legal h2 {
+  margin: 2rem 0 0.6rem;
+  color: var(--text);
+  font-size: 1.25rem;
+}
+
+.legal h3 {
+  margin: 1.5rem 0 0.4rem;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.legal p,
+.legal li {
+  line-height: 1.7;
+}
+
+.legal ul {
+  padding-left: 1.25rem;
+}
+
+.legal .intro {
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.legal strong {
+  color: var(--text);
+}
+
+/* Termly output carries inline colours and fonts; bring them onto the theme. */
+.legal [data-custom-class],
+.legal [data-custom-class] *,
+.legal span,
+.legal bdt,
+.legal li,
+.legal td {
+  color: inherit !important;
+  font-family: inherit !important;
+  background: transparent !important;
+}
+
+.legal [data-custom-class="body_text"],
+.legal [data-custom-class="body_text"] * {
+  font-size: 0.975rem !important;
+}
+
+.legal [data-custom-class="title"] {
+  display: none;
+}
+
+.legal [data-custom-class="subtitle"],
+.legal [data-custom-class="subtitle"] * {
+  color: var(--muted) !important;
+  font-size: 0.9rem !important;
+}
+
+.legal [data-custom-class="heading_1"],
+.legal [data-custom-class="heading_1"] * {
+  color: var(--text) !important;
+  font-size: 1.25rem !important;
+}
+
+.legal [data-custom-class="heading_2"],
+.legal [data-custom-class="heading_2"] * {
+  color: var(--text) !important;
+  font-size: 1.05rem !important;
+}
+
+.legal a,
+.legal a *,
+.legal [data-custom-class="link"],
+.legal [data-custom-class="link"] * {
+  color: var(--link) !important;
+}
+
+.legal table,
+.legal th,
+.legal td {
+  border-color: var(--surface1) !important;
+}
+
+.legal-credit {
+  max-width: 48rem;
+  margin: 1rem auto 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 /* Footer */
 .site-footer {
   margin-top: 2.5rem;
