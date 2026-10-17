@@ -236,3 +236,28 @@ h2 {
     transform: translateY(0);
   }
 }
+
+.access-note {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  max-width: 560px;
+  margin: 16px auto 0;
+  line-height: 1.6;
+}
+
+.access-note a {
+  color: var(--text-secondary);
+}
+
+.tag-public {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1px solid var(--primary);
+  border-radius: 999px;
+  color: var(--primary);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
