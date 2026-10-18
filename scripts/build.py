@@ -65,15 +65,17 @@ def head(title, desc, url, gtag=True):
   <meta name="apple-mobile-web-app-title" content="Rootiest" />
   <meta name="application-name" content="Rootiest" />
   <meta name="msapplication-TileColor" content="#1e1e2e" />
-  <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ff004c" />
 
   <!-- Open Graph -->
   <meta property="og:url" content="{url}" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{t}" />
   <meta property="og:description" content="{d}" />
-  <meta property="og:image" content="https://www.rootiest.com/img/banner.png" />
+  <meta property="og:image" content="https://www.rootiest.com/img/banner.png?v=2" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Rootiest Solutions: self-hosted, privacy-respecting services and open-source tools" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -81,7 +83,7 @@ def head(title, desc, url, gtag=True):
   <meta property="twitter:url" content="{url}" />
   <meta name="twitter:title" content="{t}" />
   <meta name="twitter:description" content="{d}" />
-  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png" />
+  <meta name="twitter:image" content="https://www.rootiest.com/img/banner.png?v=2" />
 </head>
 
 <body>
