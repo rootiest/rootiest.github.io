@@ -21,6 +21,7 @@
   --peach: #fe640b;
   --sky: #04a5e5;
   --lavender: #7287fd;
+  --name: #a85d63; /* dusty rose (Latte flamingo hue, darkened for legibility) */
   --shadow: rgb(76 79 105 / 12%);
   --mono: "Rootiest Iosevka", "Iosevka", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -46,6 +47,7 @@
     --peach: #fab387;
     --sky: #89dceb;
     --lavender: #b4befe;
+    --name: #cba6f7; /* Mocha mauve */
     --shadow: rgb(0 0 0 / 35%);
   }
 }
@@ -241,10 +243,10 @@ img {
   text-align: left;
 }
 
-/* Product names set in the brand colour, e.g. RootiestID */
+/* Product names, e.g. RootiestID: a subtle accent, leaving brand red for the logo and actions */
 .brand-name {
-  color: var(--brand);
-  font-weight: 700;
+  color: var(--name);
+  font-weight: 600;
   white-space: nowrap;
 }
 
