@@ -241,6 +241,13 @@ img {
   text-align: left;
 }
 
+/* Product names set in the brand colour, e.g. RootiestID */
+.brand-name {
+  color: var(--brand);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 /* Sections */
 .section {
   padding: 2rem 0;

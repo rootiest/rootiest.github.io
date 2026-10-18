@@ -333,11 +333,11 @@ svc += """
     <section class="hero compact">
       <img src="/img/icons/logo.svg" alt="" class="hero-logo" width="72" height="72" />
       <h1>Rootiest Services</h1>
-      <p class="lede">Self-hosted, privacy-respecting services. One RootiestID account signs you in to all of them.</p>
+      <p class="lede">Self-hosted, privacy-respecting services. One <span class="brand-name">RootiestID</span> account signs you in to all of them.</p>
       <p class="note">
         Services marked <span class="pill">Public</span> are open to everyone. The rest are for members:
-        a RootiestID account alone doesn't unlock them, because each one is enabled by membership in its
-        RootiestID group. To request access, <a href="https://support.rootiest.dev/">open a support ticket</a>.
+        a <span class="brand-name">RootiestID</span> account alone doesn't unlock them, because each one is
+        enabled by membership in its <span class="brand-name">RootiestID</span> group. To request access, <a href="https://support.rootiest.dev/">open a support ticket</a>.
       </p>
     </section>
 
