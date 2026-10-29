@@ -224,7 +224,7 @@ SERVICES = [
          "Private photo and video library with search and ML features, powered by Immich.", False),
         ("https://files.rootiest.com", "folder-open", "Files",
          "File storage and sharing over the web and SFTP, powered by SFTPGo.", False),
-        ("https://drive.rootiest.dev", "hard-drive", "Disk",
+        ("https://drive.rootiest.dev", "hard-drive", "Drive",
          "Fast file server with uploads, media playback and sharing, powered by copyparty.", False),
         ("https://pages.rootiest.fyi", "globe", "Pages",
          "Static sites and published docs for Rootiest projects.", True),
