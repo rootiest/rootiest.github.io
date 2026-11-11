@@ -1,4 +1,4 @@
-"""Render scripts/banner.html to img/banner.png (1200x630) with headless Firefox.
+"""Render scripts/banner.html to site/img/banner.png (1200x630) with headless Firefox.
 
 Run from anywhere:  python3 scripts/render-banner.py
 Needs firefox on PATH and numpy (for the dithered glow background, see banner-bg.py).
@@ -13,7 +13,7 @@ import threading
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "img" / "banner.png"
+OUT = ROOT / "site" / "img" / "banner.png"
 
 runpy.run_path(str(ROOT / "scripts" / "banner-bg.py"), run_name="__main__")
 
