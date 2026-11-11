@@ -1,0 +1,56 @@
+# Copyright (C) 2026 Chris Laprade (chris@rootiest.com)
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# Publish site/ to the edges' static web root on every push to main:
+# /srv/pages/<repo>/ in Caddy, served at https://rootiest.com by its own site
+# block (the pages.rootiest.fyi/<repo>/ copy is not styled: the site uses
+# root-relative links). Heracles copies the pages tree from Atlas every five
+# minutes, so the site survives a failover.
+#
+# Runs on Gitea only: the racknerd runner's "pages" label is a container job
+# that may mount the Caddy web root (the runner's only valid_volumes entry).
+# GitHub sees this file through the mirror; the guard skips it there.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - site/**
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+jobs:
+  publish:
+    if: github.server_url != 'https://github.com'
+    runs-on: pages
+    container:
+      image: docker.gitea.com/runner-images:ubuntu-latest
+      volumes:
+        - /home/rootiest/docker/caddy/pages:/pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check
+        run: python3 scripts/check.py
+
+      - name: Publish
+        shell: bash
+        run: |
+          dest="/pages/${GITHUB_REPOSITORY#*/}"
+          # Stage the whole tree, then swap it in, so the site never shows a
+          # half-copied state and files removed from site/ disappear.
+          stage="$(mktemp -d /pages/.stage.XXXXXX)"
+          trap 'rm -rf "$stage"' EXIT
+          cp -a site/. "$stage/"
+          find "$stage" -type d -exec chmod 755 {} +
+          find "$stage" -type f -exec chmod 644 {} +
+          # Files belong to the server user (uid 1000), not the job's root.
+          chown -R 1000:1000 "$stage"
+          # Hidden unique name: "<repo>.old" could be another live site.
+          old="$(mktemp -u /pages/.old.XXXXXX)"
+          [ -e "$dest" ] && mv "$dest" "$old"
+          mv "$stage" "$dest"
+          rm -rf "$old"
+          echo "https://pages.rootiest.fyi/${GITHUB_REPOSITORY#*/}/"
