@@ -43,8 +43,8 @@ def build():
     main += "\n".join(section(g.title, [card(i) for i in g.items], hue=g.hue, blurb=g.blurb, sid=slug(g.title))
                       for g in services.GROUPS)
     main += (f'\n    <p class="note">Every service is watched on the <a href="{config.STATUS_URL}/">status page</a> '
-             "and backed up, encrypted, several times a day. Read how we handle your data in the "
-             '<a href="/privacy/">privacy policy</a>.</p>\n')
+             "and backed up, encrypted, several times a day. What each service keeps is in the "
+             '<a href="/privacy/services">privacy notice</a>.</p>\n')
     return {"services/index.html": layout(
         "Rootiest Services", "Self-hosted, privacy-respecting services run by Rootiest Solutions, "
         "all behind one RootiestID sign-in.", "/services/", main, nav="Services")}

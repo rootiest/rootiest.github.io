@@ -1,6 +1,6 @@
 # Copyright (C) 2026 Chris Laprade (chris@rootiest.com)
 # SPDX-License-Identifier: AGPL-3.0-or-later
-"""The privacy policy and terms of service pages."""
+"""The Terms of Service page (and any other page listed in data/legal.py)."""
 import re
 from pathlib import Path
 

@@ -11,13 +11,16 @@ OG_IMAGE_ALT = "Rootiest Solutions: self-hosted, privacy-respecting services and
 
 ENTITY = "Rootiest Solutions LLC"
 YEAR = 2026
-PRIVACY_EMAIL = "privacy@rootiest.com"
 CONTACT_EMAIL = "chris@rootiest.com"
 
 AUTH_URL = "https://auth.rootiest.dev"
 STATUS_URL = "https://status.rootiest.dev"
 SUPPORT_URL = "https://support.rootiest.dev"
 DISCORD_INVITE = "https://discord.gg/48dqz7gwVX"
+
+# Paths on rootiest.com served from other repositories' published pages, not from site/.
+# /privacy/ is the privacy repository (git.rootiest.dev/rootiest/privacy), also at pages.rootiest.fyi/privacy/.
+MOUNTED = ("/privacy/",)
 
 # (path, label) in the header navigation; external entries are absolute URLs.
 NAV = [

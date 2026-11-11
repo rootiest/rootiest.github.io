@@ -3,6 +3,20 @@
 [build]
   publish = "site"
 
+# The privacy notices are published by the privacy repository; after the cutover
+# Caddy serves them at /privacy/ directly.
+[[redirects]]
+  from = "/privacy/*"
+  to = "https://pages.rootiest.fyi/privacy/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/privacy"
+  to = "https://pages.rootiest.fyi/privacy/"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/discord"
   to = "https://discord.gg/48dqz7gwVX"
