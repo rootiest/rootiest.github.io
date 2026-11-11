@@ -1,6 +1,9 @@
 # Temporary: Netlify serves rootiest.com until the move to the Rootiest edges.
 # Publish only site/, never the repository root. Delete this file at the cutover.
 [build]
+  # The site is prebuilt in site/. This replaces any build command set in the
+  # Netlify UI (the old site was built with Jekyll).
+  command = "echo site/ is prebuilt"
   publish = "site"
 
 # The privacy notices are published by the privacy repository; after the cutover
