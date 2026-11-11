@@ -49,12 +49,15 @@ Preview locally with any static server, for example `python3 -m http.server -d s
 
 Pushes to `main` on [git.rootiest.dev](https://git.rootiest.dev/rootiest/rootiest.com) run
 `.github/workflows/pages.yml`, which checks the site and publishes `site/` to the Rootiest edge servers'
-static web root. Caddy serves it at rootiest.com, and serves `/privacy/` from the privacy repository's
-published pages.
+static web root (`pages/rootiest.com`), live within a few minutes on both edges. Caddy serves it at
+rootiest.com, and serves `/privacy/` from the privacy repository's published pages. Its site block also
+sets the security headers (including a Content-Security-Policy that allows no scripts), sends missing
+paths to `404.html` with a 404 status, redirects `www.rootiest.com` to the apex, and sends `/discord`,
+`discord.rootiest.com` and `join.rootiest.com` to the Discord invite (keep that invite in step with
+`DISCORD_INVITE` in `scripts/sitegen/config.py`).
 
-Until that cutover, Netlify still serves rootiest.com from the GitHub mirror; `netlify.toml` limits it
-to `site/` and redirects `/privacy/` to pages.rootiest.fyi/privacy/. Delete `netlify.toml` once
-rootiest.com points at the Rootiest edges.
+The GitHub repository [rootiest/rootiest.github.io](https://github.com/rootiest/rootiest.github.io) is a
+push mirror of this one; nothing is deployed from it.
 
 ## Social preview image
 
