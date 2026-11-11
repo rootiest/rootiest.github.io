@@ -1,0 +1,19 @@
+# Copyright (C) 2026 Chris Laprade (chris@rootiest.com)
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# CI: checks that site/ matches the generator and has no broken links or
+# third-party scripts. Runs on Gitea runners; GitHub sees this file through the
+# mirror and the guard skips it there.
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  check:
+    if: github.server_url != 'https://github.com'
+    runs-on: racknerd-mini
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the site
+        run: python3 scripts/check.py
