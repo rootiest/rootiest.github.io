@@ -108,10 +108,10 @@ DEV = Group("Developer tools", "green", (
 SECURITY = Group("Security", "peach", (
     Item("Password Vault", "https://vault.rootiest.dev", "lock-keyhole",
          "End-to-end encrypted, Bitwarden-compatible password manager with autofill and TOTP.",
-         ("vault.rootiest.dev",), "members", True),
+         ("vault.rootiest.dev",), "public", True),
 ))
 
 GROUPS = (START, COMMUNICATION, NOTES, FILES, DEV, SECURITY)
 
 # Shown on the home page, in this order.
-FEATURED = ("Photos", "Chat", "Password Vault", "Rootiest AI", "Git", "Notes")
+FEATURED = ("Photos", "Chat", "Password Vault", "Gists", "Git", "Notes")
