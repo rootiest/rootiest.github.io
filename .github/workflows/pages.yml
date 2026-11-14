@@ -7,7 +7,7 @@
 # root-relative links). Heracles copies the pages tree from Atlas every five
 # minutes, so the site survives a failover.
 #
-# Runs on Gitea only: the racknerd runner's "pages" label is a container job
+# Runs on Gitea only: the atlas runner's "pages" label is a container job
 # that may mount the Caddy web root (the runner's only valid_volumes entry).
 # GitHub sees this file through the mirror; the guard skips it there.
 name: Pages
